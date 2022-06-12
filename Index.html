@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Style.css">
+    <script src="Script/scrpits.js"></script>
+    <title>Calculadora</title>
+</head>
+<body class="p-3 mb-2 bg-secondary text-dark bg-opacity-25" >
+<main >
+  <div class="principal">
+    <h2 class="titulo" >Para calcular su índice de masa corporal, ingrese su estura y peso.</h2>
+    <div class="flex-col">
+      <p class="text-secondary">Sistema métrico</p>
+      <P class="titulo">ESTATURA</P>
+      <p class="text-secondary">en centimetros</p>
+      <input id="inputEstatura" class="inputs" type="text">
+      <p class="titulo">PESO</p>
+      <p class="text-secondary">en kilogramos</p>
+      <input id="inputPeso" class="inputs" type="text">
+      <input id="btnCalcular" type="button" class="btn btn-primary botonCalcular" value="calcular" onclick="inputResultado.value = calcularIMC(inputPeso.value,inputEstatura.value); actualizarTabla();">
+    </div>
+    <div>
+      <label class="etiquetas" for="resultado">Resultado: </label>
+      <input id="inputResultado" class="inputs" type="text" >
+    </div>
+  </div>
+  
+ 
+
+</div>
+  <div class="tabla" >
+    <div id="tabla"></div>
+  </div>
+
+
+</main>
+   
+</body>
+</html>
